@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-mobile.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="projects.css">
     <title>lately-dev Official Site</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
         <h1>lately-dev</h1>
         <nav>
             <ul>
-                <li class="active">Homepage</li>
+                <a href="index.html"><li>Homepage</li></a>
                 <li>About</li>
-                <a href="projects.html"><li>Projects</li></a>
+                <li class="active">Projects</li>
                 <li>Contact</li>
             </ul>
         </nav>
@@ -24,25 +25,32 @@
     </header>
     <nav class="mobile" id="mobileMenu">
         <ul>
-            <li class="active">Homepage</li>
+            <a href="index.html"><li>Homepage</li></a>
             <li>About</li>
-            <a href="projects.html"><li>Projects</li></a>
+            <li class="active">Projects</li>
             <li>Contact</li>
         </ul>
     </nav>
     
     <main>
-        <h1>Hello</h1>
-        <p>lately-dev is a my project site, I'm an undergraduate majoring on Information Technology.</p>
-        <br>
-        <h3>What do I do?</h3>
-        <p>I usually do some UI/UX designs on Figma, doing some web projects, and trying game development.</p>
-        <br>
-        <h3>What's your projects?</h3>
-        <p>Look up at navigation and click/press <b>Projects</b>.</p>
-        <br>
-        <h3>Can I contact you in the future?</h3>
-        <p>Yes.</p>
+        <h1>Projects</h1>
+        <div class="section-grid">
+            <a href="">
+                <section class="project-box">
+                    <img src="img/ok.jpg" alt="">
+                    <h1>Title</h1>
+                    <p>Desc</p>
+                </section>
+            </a>
+
+
+            <section class="project-box">
+                <img src="img/ok.jpg" alt="">
+                <h1>Title</h1>
+                <p>Desc</p>
+            </section>
+        </div>
+
     </main>
 
     <script src="script.js"></script>

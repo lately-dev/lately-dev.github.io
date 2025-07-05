@@ -1,0 +1,41 @@
+main h1 { margin-bottom: 20px; }
+
+.section-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.section-grid a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.project-box {
+    padding: 10px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px #dedede;
+
+    transition: all 150ms ease-in-out;
+}
+
+.project-box:hover {
+    scale: 1.05;
+}
+
+.project-box h1, .project-box p { margin: 0; }
+
+.project-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .section-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
