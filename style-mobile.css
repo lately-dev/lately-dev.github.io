@@ -10,8 +10,8 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    width: 100%;
     background-color: #dedede;
 
     user-select: none;
@@ -19,45 +19,69 @@ header {
 
 h1, h2, h3, p { margin: 0; }
 
+header nav { display: none; }
+
+nav.mobile { display: block; }
+
 header h1 {
-    padding-left: 14px;
-    padding-right: 14px; 
+    padding: 14px; 
     font-size: 24px
 }
 
-header nav.mobile { display: none; }
+nav.mobile { display: none; }
 
-button.mobile { display: none; }
+nav.mobile.show { display: block; }
 
-header nav ul {
+nav.mobile ul {
     display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+nav.mobile ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 14px;
     padding-right: 14px;
     height: 40px;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 16px;
+    background-color: #dedede;
     cursor: pointer;
 
     transition: all 150ms ease-in-out;
 }
 
-header nav ul li:hover {
+nav.mobile ul li:hover {
     font-weight: bold;
     background-color: #adadad;
     border-bottom: 3px solid black;
 }
 
-header nav ul li.active {
+nav.mobile ul li.active {
     font-weight: bold;
     border-bottom: 3px solid black;
+}
+
+button.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #dedede;
+    border: none;
+    
+    transition: all 150ms ease-in-out;
+}
+
+button.mobile:hover {
+    background-color: #adadad;
+
 }
 
 main { padding: 24px; }
