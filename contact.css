@@ -22,3 +22,14 @@ main ul a li {
     align-items: center;
     gap: 5px;
 }
+
+
+@media (max-width: 600px) {
+    .email-a {
+        display: block !important;
+    }
+
+    .email-a svg {
+        vertical-align: bottom;
+    }
+}
